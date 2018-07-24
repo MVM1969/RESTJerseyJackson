@@ -29,21 +29,27 @@ public class Message<E> implements Serializable {
 	@XmlElement
 	protected// In the Request
 	String auth_token;
+
 	public int getHttpResponseCode() {
 		return httpResponseCode;
 	}
+
 	public void setHttpResponseCode(int httpResponseCode) {
 		this.httpResponseCode = httpResponseCode;
 	}
+
 	public ErrorMessage getErrorMessage() {
 		return errorMessage;
 	}
+
 	public void setErrorMessage(ErrorMessage errorMessage) {
 		this.errorMessage = errorMessage;
 	}
+
 	public String getAuth_token() {
 		return auth_token;
 	}
+
 	public void setAuth_token(String auth_token) {
 		this.auth_token = auth_token;
 	}
